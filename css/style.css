@@ -1,0 +1,14 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    font-size: medium;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif, '微軟正黑體', "Microsoft JhengHei";
+}

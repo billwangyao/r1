@@ -1,0 +1,121 @@
+*, *:after, *:before {
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.calendar {
+  display: inline-block;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #white;
+  padding: 16px; }
+  .calendar .top {
+    width: 100%;
+    display: inline-block; }
+    .calendar .top > .title {
+      text-align: left;
+      width: 80%;
+      display: inline-block;
+      letter-spacing: 0.5em; }
+    .calendar .top > .btn {
+      text-align: center;
+      display: inline-block;
+      width: 15%; }
+      .calendar .top > .btn > * {
+        text-align: center;
+        background-color: rgba(230, 230, 230, 0.4);
+        width: 30%; }
+  .calendar .month {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(240, 240, 240, 0.5);
+    @incldue clearfix(); }
+    .calendar .month .weeks, .calendar .month .days {
+      display: table-row;
+      width: 100%; }
+      .calendar .month .weeks:after, .calendar .month .days:after {
+        display: table;
+        content: "";
+        clear: both;
+        visibility: hidden; }
+      .calendar .month .weeks, .calendar .month .days {
+        *zoom: 1; }
+      .calendar .month .weeks > div, .calendar .month .days > div {
+        float: left;
+        display: table-cell;
+        width: calc( 100% / 7);
+        border: 1px solid rgba(200, 200, 200, 0.3); }
+      .calendar .month .weeks .today, .calendar .month .days .today {
+        border: 3px solid rgba(250, 0, 0, 0.5);
+        color: rgba(250, 0, 0, 0.5);
+        font-size: 14px;
+        font-weight: bold; }
+    .calendar .month .weeks > div {
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      font-size: 20px; }
+    .calendar .month .days > div {
+      text-align: right;
+      height: 100px;
+      padding: 8px;
+      font-size: 13px;
+      overflow-y: auto; }
+    .calendar .month .days span {
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      padding: 2px 5px;
+      margin: 2px;
+      color: #fff;
+      cursor: pointer;
+      word-wrap: break-word;
+      background-color: rgba(0, 0, 150, 0.5); }
+
+#info {
+  position: relative;
+  display: none;
+  max-width: 600px;
+  width: 90%;
+  text-align: left;
+  border: 2px solid rgba(0, 0, 150, 0.5);
+  padding: 16px;
+  background-color: rgba(250, 250, 250, 0.8);
+  box-shadow: 2px 2px 2px rgba(30, 30, 180, 0.9);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  #info > * {
+    color: rgba(50, 50, 50, 0.8); }
+  #info > .title {
+    letter-spacing: 0.2em;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    height: 40px;
+    line-height: 40px;
+    word-wrap: break-word; }
+  #info > i {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(30, 30, 180, 0.9);
+    height: 0;
+    padding: 0; }
+  #info > .content {
+    margin-top: -10px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    font-size: 14px; }
+
+/*# sourceMappingURL=public.css.map */
